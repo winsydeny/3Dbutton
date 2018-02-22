@@ -1,0 +1,73 @@
+*{
+		margin: 0px;
+
+	}
+		#box{
+			position: relative;
+			width: 507px;
+			height: 300px;
+			margin: 100px 0 0 400px;
+			
+		}
+		#tab{
+		   width: 200px;
+		   height: 300px;
+		   float: left;
+		   font-size: 20px;
+		   text-align: center;
+		   line-height: 100px;
+		   color: white;
+		   font-weight: bold;
+		   cursor: pointer;
+		}
+		#tab div:nth-child(1){
+			height: 100px;
+			background-color: #00a1ff;
+		}
+		#tab div:nth-child(2){
+			height: 100px;
+			width: 200px;
+			background-color: #ffcb0f;
+		}
+		#tab div:nth-child(3){
+			height: 100px;
+            background-color: #9c27b0;
+		}
+		#content{
+			width: 300px;
+			height: 300px;
+			float: right;
+			transform-style: preserve-3d;
+			transition: 1s;
+			 font-size: 20px;
+		   text-align: center;
+		   line-height: 300px;
+		   color: white;
+		   font-weight: bold;
+       }
+        #content div:nth-child(1){
+        	height: 300px;
+        	width: 300px;
+        	background-color: #009688;
+        	border: 1px solid red;
+        	position: absolute;
+        	top: -300px;
+        	transform-origin: bottom;
+        	transform:translateZ(150px) rotateX(90deg);
+        	 }
+		#content div:nth-child(2){
+			height: 300px;
+			width: 300px;
+			background-color:  #ffcb0f;
+        	border: 1px solid red;
+        	z-index: 1;
+			transform:translateZ(150px);
+		}
+		#content div:nth-child(3){
+			height: 300px;
+			width: 300px;
+			background-color: #9c27b0;
+        	border: 1px solid red;
+			transform-origin: top;
+			transform:translateZ(150px) rotateX(-90deg);
+		}
