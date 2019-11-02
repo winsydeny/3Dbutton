@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="File" name="avatar" onchange="show()">
+        <img src="" alt="png">
+        <input type="File" name="background">
+    </form>
+    <script>
+
+        
+        const show = function(){
+            let url = '';
+            const file = document.querySelector("input[name='avatar']");
+            const img = document.querySelector("img");
+            
+            const fileread = new FileReader()
+            fileread.readAsDataURL(file.files[0]);
+            fileread.onload = function(){
+                // console.log(img)
+                img.src = this.result;
+            }
+            
+
+            
+        }
+        
+                
+        </script>
+</body>
+</html>
